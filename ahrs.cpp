@@ -8,13 +8,13 @@
 // Kalman-based filtering algorithms but is much less computationally
 // intensive---it can be performed on a 3.3 V Pro Mini operating at 8 MHz!
 
-#include "AHRSAlgorithms.h"
-
+#include "ahrs.h"
+#include <math.h>
 // These are the free parameters in the Mahony filter and fusion scheme, Kp
 // for proportional feedback, Ki for integral
 #define Kp 2.0f * 5.0f
 #define Ki 0.0f
-
+typedef unsigned char byte;
 static float GyroMeasError = PI * (40.0f / 180.0f);
 // gyroscope measurement drift in rad/s/s (start at 0.0 deg/s/s)
 static float GyroMeasDrift = PI * (0.0f  / 180.0f);
