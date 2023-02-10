@@ -12,7 +12,7 @@
 #define RAD_TO_DEG 57.2957795
 using namespace std::chrono;
 Timer t;
-I2C i2c(PB_7, PB_6);
+I2C i2c(p28, p27);
 //static BufferedSerial pc(USBTX, USBRX);
 
 /*float clock_s() { return us_ticker_read() / 1000000.0f; }
