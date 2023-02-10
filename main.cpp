@@ -15,6 +15,7 @@
 #include "mbed.h"
 #include "ahrs.h"
 #include "icm20948.h"
+#include "uLCD_4DGL.h"
 #include <cstdio>
 #include <stdint.h>
 
